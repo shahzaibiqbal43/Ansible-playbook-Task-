@@ -1,0 +1,12 @@
+--- # Install PHP & WORDPRESS
+- name: Install php-fpm
+  yum: 
+    name: 
+     php-fpm
+    
+
+- name: wordpress
+  yum:
+   name: 
+     wordpress
+    

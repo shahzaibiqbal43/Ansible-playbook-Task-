@@ -1,0 +1,12 @@
+   - name: Add mariadb repo
+     yum_repository:
+       name: MariaDB-10.3
+       description: mariadb
+       baseurl: http://yum.mariadb.org/10.3/centos7-amd64
+       gpgkey: https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
+       gpgcheck: yes
+   - name: Install package
+     yum:
+       name:
+         - MariaDB-server
+
